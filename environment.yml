@@ -1,0 +1,9 @@
+name: for_paloma
+channels:
+  - conda-forge
+dependencies:
+  - python = 3.9
+  - numpy
+  - matplotlib
+  - netcdf4
+  - ncl
