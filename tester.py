@@ -19,6 +19,9 @@ if not isfile(divname):
     call(callstr)
 
 # read in some data from the input file...
+# there's some abnoxious 'transpose' stuff because of how the fortran code needs the data arranged
+# the squeeze stuff just gets rid of degenerate dimensions.
+# (I really should get more comfortable with xarray instead.)
 indat = Dataset(inname)
 lat = np.squeeze(indat.variables["lat"][:])
 lon = np.squeeze(indat.variables["lon"][:])
