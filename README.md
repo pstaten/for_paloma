@@ -20,3 +20,5 @@ If the code ran correctly, you should be able to open up `test_plot.pdf` and it 
 
 Please don't hesitate to reach out with questions.
 Paul
+
+P.S. The input data file included is a tiny piece of some aquaplanet data Ruth Geen created using Isca. Thanks, Ruth!
