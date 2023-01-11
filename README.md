@@ -11,10 +11,11 @@ You'll find some NCL code for calculating the divergent wind. I used NCL code be
 So I did not create the divergent wind calculator or the stream function calculator. I just took some that were already in use and that I considered reliable, and I wrapped them in Python.
 
 I packaged up the necessary stuff for you to save you some time. I'm going to assume you have Anaconda (or miniconda) on your system, and you're comfortable with bash. If you want to use my code, just do the following:
-1 - download it to a folder on the machine you want to run it on
-2 - from within the folder, create a conda environment with the command: `conda env create -f environment.yml`
-3 - when that's done, from within the folder, compile the FORTRAN code with the command: `f2py -c -m ps_ccmp_mpsi ps_ccmp_mpsi.f90`
-4 - when that's done, you should just be able to run the test code: `python tester.py`
+
+1. download it to a folder on the machine you want to run it on
+2. from within the folder, create a conda environment with the command: `conda env create -f environment.yml`
+3. when that's done, from within the folder, compile the FORTRAN code with the command: `f2py -c -m ps_ccmp_mpsi ps_ccmp_mpsi.f90`
+4. when that's done, you should just be able to run the test code: `python tester.py`
 
 If the code ran correctly, you should be able to open up `test_plot.pdf` and it should immediately look...like a zonal mean-ish Hadley cell.
 
